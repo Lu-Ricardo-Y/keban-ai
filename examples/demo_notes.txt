@@ -1,0 +1,7 @@
+This file is a synthetic demo written for testing. It is not a course handout.
+
+For this demo, Process A cures a liquid photosensitive resin using ultraviolet light.
+Process B extrudes a heated thermoplastic filament through a nozzle.
+Process C joins metal sheets by pressing them together.
+
+The correct choice for a question asking which process cures liquid resin with ultraviolet light is Process A.

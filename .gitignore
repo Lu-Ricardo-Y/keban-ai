@@ -1,0 +1,24 @@
+# Personal material, downloaded models, and runtime state never belong in Git.
+data/
+models/
+runtime/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+.env
+.env.*
+*.sqlite3
+*.log
+*.pdf
+*.zip
+*.jpg
+*.jpeg
+*.png
+*.webp
+
+# Users may keep their own documents beside the app locally.
+course_files/
+documents/
+private/
