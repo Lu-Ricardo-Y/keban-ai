@@ -107,7 +107,7 @@ py -3 -m venv .venv
 2. 问：“According to the imported demo notes, which process cures liquid resin with ultraviolet light? A. Process A B. Process B C. Process C”。预期答 A，并在来源区找到 `demo_notes.txt`。若模型给出别的选项，以示例原文为准；模型输出不是测试的唯一判据。
 3. 把这道题截图后贴入问答框，确认截图转录、答案和来源仍可查看。题干与全部选项应清晰可见。
 4. 断开 Wi‑Fi、保持 Ollama 模型已下载，刷新网页并重复文字题。页面应仍能连接本地模型并回答；若网页无法打开，检查启动终端是否仍在运行。
-5. 导入一个你自己制作的两页 Markdown，分别使用上面的两种页码格式；资料列表应显示 2 页，问第二页特有的词时来源应显示 PDF 第 2 页。
+5. 自己制作一份两页 Markdown，选用上面任意一种页码格式，并在同一个文件中保持格式一致；资料列表应显示 2 页，问第二页特有的词时来源应显示 PDF 第 2 页。
 
 验证只能说明安装、检索和基本交互正常；真实学科题的正确率还需用带标准答案的题集单独评估。尤其检查 `NOT`、`EXCEPT`、数字、单位和表格列关系。
 
