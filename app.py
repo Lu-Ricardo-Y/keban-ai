@@ -172,7 +172,7 @@ def build_payload(provider,model,instructions,user,images,limit=MAX_OUTPUT_TOKEN
     if images:
         info=model_request(provider,'/api/show',{'model':model}) if provider=='ollama' else None
         if provider!='ollama' or 'vision' not in info.get('capabilities',[]):
-            raise ValueError('图片问答请使用 Ollama 中支持 vision 的本地模型，例如 qwen3-vl:8b。')
+            raise ValueError('图片问答请使用 Ollama 中支持 vision 的本地模型。')
     payload={'model':model,'messages':[{'role':'system','content':instructions},{'role':'user','content':user}],'stream':False}
     if provider=='ollama':
         payload['options']={'temperature':.1,'num_ctx':CONTEXT_TOKENS,'num_predict':limit}

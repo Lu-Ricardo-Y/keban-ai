@@ -22,8 +22,8 @@ if binary and models() is None:
         time.sleep(.5)
 found=models()
 if found is None:print('本地 Ollama 未启动；请安装并启动 Ollama，页面仍可使用资料检索。',flush=True)
-elif 'qwen3-vl:8b' in found:print('Qwen3-VL 8B 已就绪。',flush=True)
-else:print('已连接现有 Ollama，但未发现 qwen3-vl:8b。请检查该服务的模型目录。',flush=True)
+elif found:print(f'已连接本地 Ollama，发现 {len(found)} 个已下载模型。请在网页中选择适合本机的模型。',flush=True)
+else:print('已连接本地 Ollama，但未发现已下载模型。请先完成模型选择与下载。',flush=True)
 port=os.environ.get('STUDY_PORT','8765')
 try:
     with urllib.request.build_opener(urllib.request.ProxyHandler({})).open(f'http://127.0.0.1:{port}/api/version',timeout=2) as r:
